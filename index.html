@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image compressor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Select an image to reduce file size</h1>
+       
+            <input type="file" id="input" accept="image/*" required>
+            <br>
+            <select name="" id="q">
+                <option value="90">High</option>  
+                <option value="80">Good</option>
+                <option value="60">Medium</option>
+                <option value="40">Low</option>
+                <option value="10">Very Low</option>
+            </select>
+            <br>
+            <button id="b">click</button>
+            <br>
+            <span>size</span><span id="original-size"></span>
+            <br>
+            <span>Small size</span> <span id="compressed-size"></span>
+        
+    </main>
+
+    
+      <script type="py" src="main.py" config='{"packages": ["pillow"]}'></script>
+</body>
+</html>
